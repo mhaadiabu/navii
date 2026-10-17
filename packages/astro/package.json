@@ -1,6 +1,6 @@
 {
   "name": "@usenavii/astro",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "description": "Astro components for Navii deterministic avatars.",
   "type": "module",
   "main": "./dist/index.js",
@@ -52,7 +52,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@usenavii/core": "workspace:^0.9.1",
+    "@usenavii/core": "workspace:^0.10.0",
     "@mhaadi/svg": "^0.3.1"
   },
   "peerDependencies": {
