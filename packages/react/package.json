@@ -1,7 +1,7 @@
 {
   "name": "@usenavii/react",
   "version": "0.9.1",
-  "description": "React binding for Navii deterministic avatars — <Navii seed=\"...\" />.",
+  "description": "React binding for Navii deterministic avatars \u2014 <Navii seed=\"...\" />.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -51,7 +51,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@usenavii/core": "workspace:^0.9.1"
+    "@usenavii/core": "workspace:^0.9.1",
+    "@mhaadi/svg": "^0.3.0"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -63,7 +64,6 @@
     }
   },
   "devDependencies": {
-    "@mhaadi/svg": "^0.2.3",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
     "@types/react": "^19.3.0",
