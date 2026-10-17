@@ -1,33 +1,25 @@
-import { ChangeDetectionStrategy, Component, Directive, computed, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
 import { SVG as SvgRoot } from '@mhaadi/svg/angular';
 import { createAvatar, renderGroup, renderGroupTiles, type AvatarOptions, type GroupOptions, type StyleHint } from '@usenavii/core';
 
-/** Common signal inputs inherited by the standalone avatar components. */
-@Directive()
-abstract class NaviiInputs {
-  readonly size = input(96);
-  readonly options = input<AvatarOptions>({});
-  readonly title = input<string>();
-  readonly animated = input<boolean>();
-  readonly styleHint = input<StyleHint>();
-  readonly renderAs = input<'svg' | 'img'>('svg', { alias: 'as' });
-  readonly alt = input<string>();
-  readonly sanitize = input(false);
-  readonly svgClass = input<string>();
-  readonly svgStyle = input<string>();
-  readonly svgLoad = output<string>();
-  readonly svgError = output<Error>();
-
-  protected readonly avatarOptions = computed<AvatarOptions>(() => {
-    const options: AvatarOptions = { ...this.options(), size: this.size() };
-    const title = this.title();
-    const animated = this.animated();
-    const styleHint = this.styleHint();
-    if (title !== undefined) options.title = title;
-    if (animated !== undefined) options.animated = animated;
-    if (styleHint !== undefined) options.style = styleHint;
-    return options;
-  });
+// Inputs are declared flat on each component instead of a shared base class:
+// re-declaring an inherited signal input (NaviiGroup's size) is fragile, so the
+// `applySharedInputs helper mirrors them once and both components call it.
+function applySharedInputs(
+  base: AvatarOptions,
+  values: {
+    size: number;
+    options: AvatarOptions;
+    title?: string | undefined;
+    animated?: boolean | undefined;
+    styleHint?: StyleHint | undefined;
+  },
+): AvatarOptions {
+  const options: AvatarOptions = { ...base, ...values.options, size: values.size };
+  if (values.title !== undefined) options.title = values.title;
+  if (values.animated !== undefined) options.animated = values.animated;
+  if (values.styleHint !== undefined) options.style = values.styleHint;
+  return options;
 }
 
 /** Standalone avatar component. Import Navii into the consuming component. */
@@ -49,8 +41,30 @@ abstract class NaviiInputs {
     }
   `,
 })
-export class Navii extends NaviiInputs {
+export class Navii {
   readonly seed = input.required<string>();
+  readonly size = input(96);
+  readonly options = input<AvatarOptions>({});
+  readonly title = input<string>();
+  readonly animated = input<boolean>();
+  readonly styleHint = input<StyleHint>();
+  readonly renderAs = input<'svg' | 'img'>('svg', { alias: 'as' });
+  readonly alt = input<string>();
+  readonly sanitize = input(false);
+  readonly svgClass = input<string>();
+  readonly svgStyle = input<string>();
+  readonly svgLoad = output<string>();
+  readonly svgError = output<Error>();
+
+  protected readonly avatarOptions = computed(() =>
+    applySharedInputs({}, {
+      size: this.size(),
+      options: this.options(),
+      title: this.title(),
+      animated: this.animated(),
+      styleHint: this.styleHint(),
+    }),
+  );
   protected readonly svg = computed(() => createAvatar(this.seed(), this.avatarOptions()));
   protected readonly label = computed(() => this.alt() ?? this.avatarOptions().title ?? '');
   protected readonly dataUri = computed(() => `data:image/svg+xml;utf8,${encodeURIComponent(this.svg())}`);
@@ -83,9 +97,21 @@ export class Navii extends NaviiInputs {
     }
   `,
 })
-export class NaviiGroup extends NaviiInputs {
-  override readonly size = input(64);
+export class NaviiGroup {
   readonly seeds = input.required<string[]>();
+  readonly size = input(64);
+  readonly options = input<AvatarOptions>({});
+  readonly title = input<string>();
+  readonly animated = input<boolean>();
+  readonly styleHint = input<StyleHint>();
+  readonly renderAs = input<'svg' | 'img'>('svg', { alias: 'as' });
+  readonly alt = input<string>();
+  readonly sanitize = input(false);
+  readonly svgClass = input<string>();
+  readonly svgStyle = input<string>();
+  readonly svgLoad = output<string>();
+  readonly svgError = output<Error>();
+
   readonly overlap = input(0.3);
   readonly max = input<number>();
   readonly ring = input<string>();
@@ -94,7 +120,14 @@ export class NaviiGroup extends NaviiInputs {
   readonly counterInk = input<string>();
 
   protected readonly groupOptions = computed<GroupOptions>(() => {
-    const options: GroupOptions = { ...this.avatarOptions(), overlap: this.overlap() };
+    const options: GroupOptions = applySharedInputs({}, {
+      size: this.size(),
+      options: this.options(),
+      title: this.title(),
+      animated: this.animated(),
+      styleHint: this.styleHint(),
+    });
+    options.overlap = this.overlap();
     const max = this.max();
     const ring = this.ring();
     const tileBg = this.tileBg();

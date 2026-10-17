@@ -59,8 +59,9 @@
     "astro": ">=5"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && node scripts/build-dts.mjs",
     "typecheck": "astro check",
+    "test": "node test/dts.test.mjs",
     "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
