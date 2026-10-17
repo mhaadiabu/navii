@@ -12,6 +12,17 @@ The Flutter SDK in [`packages/flutter`](./packages/flutter) versions **independe
 | -------------------- | --------------------------------------- |
 | `0.1.0-dev.1`        | `0.9.x`                                 |
 
+## [Unreleased]
+
+### Added
+
+- Solid, Angular, and Astro packages with `Navii` and `NaviiGroup` components, framework guides, and release packaging.
+
+### Changed
+
+- Updated framework rendering to `@mhaadi/svg` 0.3.1, including per-instance SVG ID scoping.
+- Framework builds and package checks run on Node 22, 24, and 26.
+
 ## [0.28.2] - 2026-07-24
 
 ### Changed (docs)

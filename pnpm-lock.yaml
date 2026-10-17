@@ -185,7 +185,7 @@ importers:
   packages/angular:
     dependencies:
       '@mhaadi/svg':
-        specifier: ^0.3.0
+        specifier: ^0.3.1
         version: 0.3.1(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2))(@angular/platform-browser@22.2.3(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2)))(astro@7.4.0(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(react-dom@19.3.0(react@19.3.0))(react-native-svg@15.15.5(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0))(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0)(solid-js@1.9.17)(svelte@5.57.1)(vite@8.3.2(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.43(@typescript/typescript6@6.0.2))
       '@usenavii/core':
         specifier: workspace:^0.9.1
@@ -244,7 +244,7 @@ importers:
   packages/astro:
     dependencies:
       '@mhaadi/svg':
-        specifier: ^0.3.0
+        specifier: ^0.3.1
         version: 0.3.1(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2))(@angular/platform-browser@22.2.3(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2)))(astro@7.4.0(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(react-dom@19.3.0(react@19.3.0))(react-native-svg@15.15.5(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0))(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0)(solid-js@1.9.17)(svelte@5.57.1)(vite@8.3.4(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.43(@typescript/typescript6@6.0.2))
       '@usenavii/core':
         specifier: workspace:^0.9.1
@@ -285,7 +285,7 @@ importers:
   packages/react:
     dependencies:
       '@mhaadi/svg':
-        specifier: ^0.3.0
+        specifier: ^0.3.1
         version: 0.3.1(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2))(@angular/platform-browser@22.2.3(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2)))(astro@7.4.0(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(react-dom@19.3.0(react@19.3.0))(react-native-svg@15.15.5(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0))(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0)(solid-js@1.9.17)(svelte@5.57.1)(vite@8.3.4(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.43(typescript@6.0.3))
       '@usenavii/core':
         specifier: workspace:^0.9.1
@@ -322,7 +322,7 @@ importers:
   packages/react-native:
     dependencies:
       '@mhaadi/svg':
-        specifier: ^0.3.0
+        specifier: ^0.3.1
         version: 0.3.1(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2))(@angular/platform-browser@22.2.3(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2)))(astro@7.4.0(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(react-dom@19.3.0(react@19.3.0))(react-native-svg@15.15.5(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0))(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0)(solid-js@1.9.17)(svelte@5.57.1)(vite@8.3.4(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.43(@typescript/typescript6@6.0.2))
       '@usenavii/core':
         specifier: workspace:^0.9.1
@@ -359,7 +359,7 @@ importers:
   packages/solid:
     dependencies:
       '@mhaadi/svg':
-        specifier: ^0.3.0
+        specifier: ^0.3.1
         version: 0.3.1(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2))(@angular/platform-browser@22.2.3(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2)))(astro@7.4.0(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(react-dom@19.3.0(react@19.3.0))(react-native-svg@15.15.5(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0))(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0)(solid-js@1.9.17)(svelte@5.57.1)(vite@8.3.4(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.43(@typescript/typescript6@6.0.2))
       '@usenavii/core':
         specifier: workspace:^0.9.1
@@ -381,7 +381,7 @@ importers:
   packages/svelte:
     dependencies:
       '@mhaadi/svg':
-        specifier: ^0.3.0
+        specifier: ^0.3.1
         version: 0.3.1(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2))(@angular/platform-browser@22.2.3(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2)))(astro@7.4.0(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(react-dom@19.3.0(react@19.3.0))(react-native-svg@15.15.5(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0))(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0)(solid-js@1.9.17)(svelte@5.57.1)(vite@8.3.2(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.43(@typescript/typescript6@6.0.2))
       '@usenavii/core':
         specifier: workspace:^0.9.1
@@ -424,7 +424,7 @@ importers:
   packages/vue:
     dependencies:
       '@mhaadi/svg':
-        specifier: ^0.3.0
+        specifier: ^0.3.1
         version: 0.3.1(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2))(@angular/platform-browser@22.2.3(@angular/common@22.2.3(@angular/core@22.2.3(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.2.3(rxjs@7.8.2)))(astro@7.4.0(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(react-dom@19.3.0(react@19.3.0))(react-native-svg@15.15.5(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0))(react-native@0.87.1(@babel/core@8.0.1)(@types/react@19.3.0)(react@19.3.0)(supports-color@8.1.1))(react@19.3.0)(solid-js@1.9.17)(svelte@5.57.1)(vite@8.3.4(@types/node@26.6.4)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.43(@typescript/typescript6@6.0.2))
       '@usenavii/core':
         specifier: workspace:^0.9.1

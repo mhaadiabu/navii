@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@usenavii/core": "workspace:^0.9.1",
-    "@mhaadi/svg": "^0.3.0"
+    "@mhaadi/svg": "^0.3.1"
   },
   "peerDependencies": {
     "solid-js": "^1.9.0"
