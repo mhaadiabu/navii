@@ -52,7 +52,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@mhaadi/svg": "^0.3.0",
+    "@mhaadi/svg": "^0.3.1",
     "@usenavii/core": "workspace:^0.9.1"
   },
   "peerDependencies": {

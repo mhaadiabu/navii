@@ -20,7 +20,7 @@ The Flutter SDK in [`packages/flutter`](./packages/flutter) versions **independe
 
 ### Changed
 
-- Updated framework rendering to `@mhaadi/svg` 0.3.0, including per-instance SVG ID scoping.
+- Updated framework rendering to `@mhaadi/svg` 0.3.1, including per-instance SVG ID scoping.
 - Framework builds and package checks run on Node 22, 24, and 26.
 
 ## [0.28.2] - 2026-07-24
