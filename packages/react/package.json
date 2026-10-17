@@ -51,7 +51,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@usenavii/core": "workspace:^0.9.1"
+    "@usenavii/core": "workspace:^0.9.1",
+    "@mhaadi/svg": "^0.3.1"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -63,7 +64,6 @@
     }
   },
   "devDependencies": {
-    "@mhaadi/svg": "^0.2.3",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
     "@types/react": "^19.3.0",
