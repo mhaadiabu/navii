@@ -11,7 +11,7 @@ for (const packageName of affectedPackages) {
   );
   assert.equal(
     manifest.dependencies?.['@mhaadi/svg'],
-    '^0.3.1',
+    '^0.4.0',
     `@usenavii/${packageName} must declare the SVG adapter dependency`,
   );
 
@@ -32,7 +32,7 @@ for (const packageName of ['svelte', 'astro']) {
   );
   assert.equal(
     manifest.dependencies?.['@mhaadi/svg'],
-    '^0.3.1',
+    '^0.4.0',
     `@usenavii/${packageName} must declare the SVG adapter dependency`,
   );
 }

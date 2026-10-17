@@ -8,6 +8,9 @@ await build({
   bundle: true,
   format: 'esm',
   platform: 'neutral',
+  // The neutral platform ignores "main"; the SVG adapter's XML parser
+  // dependency (@xmldom/xmldom) declares only "main", so bundle it explicitly.
+  mainFields: ['main'],
   target: 'es2022',
   sourcemap: true,
   conditions: ['import'],

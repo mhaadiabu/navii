@@ -23,7 +23,7 @@ The Flutter SDK in [`packages/flutter`](./packages/flutter) versions **independe
 
 ### Changed (`@usenavii/react` 0.10.0, `@usenavii/vue` 0.10.0, `@usenavii/react-native` 0.10.0, `@usenavii/svelte` 0.10.0)
 
-- Updated framework rendering to `@mhaadi/svg` 0.3.1, including per-instance SVG ID scoping so identical avatars no longer share gradient and clip IDs.
+- Updated framework rendering to `@mhaadi/svg` 0.4.0, including per-instance SVG ID scoping so identical avatars no longer share gradient and clip IDs.
 - React, Vue, React Native, and Svelte declare `@mhaadi/svg` as a runtime dependency alongside the bundled adapter code, so package managers register the relationship.
 - Framework builds and package checks run on Node 22, 24, and 26.
 
