@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
+import { needsLinking } from '@angular/compiler-cli/linker';
 
 const bundle = await readFile(new URL('../dist/index.js', import.meta.url), 'utf8');
+assert.equal(needsLinking('dist/index.js', bundle), true, 'Angular must detect the package for AOT linking');
 
 // Angular applications compile from partial declarations; the esbuild bundle
 // must preserve them and keep the SVG adapter bundled for extensionless imports.

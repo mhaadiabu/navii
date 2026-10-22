@@ -7,6 +7,8 @@ await build({
   outfile: 'dist/index.js',
   bundle: true,
   format: 'esm',
+  // Angular's linker detects literal ɵɵngDeclare identifiers before parsing.
+  charset: 'utf8',
   platform: 'neutral',
   // The neutral platform ignores "main"; the SVG adapter's XML parser
   // dependency (@xmldom/xmldom) declares only "main", so bundle it explicitly.
