@@ -4,7 +4,7 @@ Small project, mostly solo. The notes below exist so consumers of `@usenavii/cor
 
 ## Development tooling
 
-Use Node.js 22.22.2+, 24.15+, or 26+ and the pnpm version pinned in `package.json`.
+Use Node.js 22.23.4+, 24.22.1+, or 26.12.1+ and the pnpm version pinned in `package.json`.
 Run `pnpm install --frozen-lockfile`, `pnpm build`, `pnpm typecheck`,
 `pnpm test`, and `pnpm test:artifacts` before submitting changes.
 
