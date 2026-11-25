@@ -8,7 +8,7 @@ Use Node.js 22.23.5+, 24.22.3+, or 26.13.1+ and the pnpm version pinned in `pack
 Run `pnpm install --frozen-lockfile`, `pnpm build`, `pnpm typecheck`,
 `pnpm test`, and `pnpm test:artifacts` before submitting changes.
 
-`@typescript/native` supplies TypeScript 7's `tsc` executable. The `typescript`
+`tsrs` runs the TypeScript checks and compiles the API package. The `typescript`
 alias points to Microsoft's `@typescript/typescript6` compatibility package
 because tsup and Svelte tooling use the TypeScript 6 compiler API.
 `svelte-check` validates the `.svelte` components as well as their TypeScript.
