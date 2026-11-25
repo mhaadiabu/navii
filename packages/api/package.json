@@ -17,8 +17,8 @@
     "src"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsrs -p tsconfig.json",
+    "typecheck": "tsrs -p tsconfig.json --noEmit",
     "dev": "tsx watch src/dev.ts",
     "test": "vitest run"
   },
