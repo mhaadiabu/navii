@@ -11,7 +11,7 @@ for (const packageName of [...externalAdapters, 'svelte', 'astro']) {
   );
   assert.equal(
     manifest.dependencies?.['@mhaadi/svg'],
-    '^0.5.0',
+    '^0.5.1',
     `@usenavii/${packageName} must declare the SVG adapter dependency`,
   );
 }

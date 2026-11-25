@@ -52,8 +52,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@usenavii/core": "workspace:^0.10.0",
-    "@mhaadi/svg": "^0.5.0"
+    "@mhaadi/svg": "^0.5.1",
+    "@usenavii/core": "workspace:^0.10.0"
   },
   "peerDependencies": {
     "astro": ">=5"
@@ -65,9 +65,9 @@
     "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
-    "tsup": "^8.5.1",
-    "astro": "^7.4.13",
     "@astrojs/check": "^0.9.12",
+    "astro": "^7.4.13",
+    "tsup": "^9.0.0",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
   }
 }
